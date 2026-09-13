@@ -1,0 +1,145 @@
+:root {
+--text-color: #44c1ff;
+--background-color: #0c0e0f;
+--link-color: #bbe5ff;
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Roboto Mono', sans-serif;
+    scroll-behavior: smooth;
+}
+body
+{
+    padding-top: 80px;
+background-color: var(--background-color);
+color: var(--text-color);
+
+}
+a{
+    text-decoration: none;
+    color: var(--link-color);
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 45px;
+    background-color: #000408;
+    align-items: center;
+}
+nav .right a:last-child{
+    background-color: #bbe5ff;
+    color:#000408;
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+#hero{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+#hero .right{
+    display: inline;
+    flex: 1;
+}
+#hero img{
+    flex: 1;
+}
+#hero h1{
+    font-size: 500%;
+}
+#hero p{
+    font-size: 130%;
+}
+#stack {
+    font-size: 400%;
+    text-align: center;
+}
+#stack .slider{
+    width: 100%;
+    overflow: hidden;
+    background-color: #000408;
+    padding: 25px 0px;
+    
+}
+#stack .images{
+    display: flex;
+    width: max-content;
+    animation: scroll 10s linear infinite;
+}
+#stack .images img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 50px;
+}
+#projects h1{
+    text-align: center;
+    font-size: 400%;
+}
+#projects p{
+    padding: 10px 10px;
+}
+#projects img{
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+}
+#projects .top{
+    display: flex;
+}
+#projects .bottom{
+    padding-top: 50px;
+    display: flex;
+}
+#contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+    margin-top: 100px;
+    padding: 20px 45px;
+
+    background-color: #000;
+    color: #fff;
+}
+
+#contact .left,
+#contact .right {
+    margin: 0;
+    flex: 1;
+}
+
+#contact .right {
+    text-align: right;
+}
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+@media (max-width: 700px)
+{
+ #hero{
+    display: inline;
+ }
+}
+
+    
